@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+    --primary-color: white;
+    --secondary-color: #202124;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    width: 100vw;
+    background: var(--secondary-color);
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 0;
+}
+
+#input-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.input-box {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+label {
+    font-size: 1.25rem;
+}
+
+input {
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 0.25rem 1.25rem;
+    margin-top: 0.25rem;
+    border: 1px solid #4a4c52;
+    border-radius: 0.25rem;
+    outline: none;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
+.fa-arrow-right-arrow-left {
+    font-size: 1.5rem;
+    margin: 2rem 2rem 0 2rem;
+}
+
+select {
+    text-align: center;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    background: var(--secondary-color);
+}
+
+/* media query for responsiveness */
+
+@media only screen and (max-width: 800px) {
+    .fa-arrow-right-arrow-left {
+        display: none !important;
+    }
+
+    #input-field {
+        flex-direction: column;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+}

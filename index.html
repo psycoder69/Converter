@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Converter </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/7748f3a2f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <h1> Converter </h1>
+        
+        <form action="#" method="post" id="form">
+            <div id="input-field">
+                <div class="input-box">
+                    <label for="radius" id="label1"> Centimeter </label>
+                    <input type="text" name="input-1" id="input1" autocomplete="off">
+                </div>
+
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                
+                <div class="input-box">
+                    <label for="volume" id="label2"> Inch </label>
+                    <input type="text" name="input-2" id="input2" autocomplete="off">
+                </div>
+            </div>
+
+            <select name="converter" id="converter">
+                <option value="cm-to-inch"> cm to inch </option>
+                <option value="celsius-to-fahrenheit">
+                    &deg;C to &deg;F
+                </option>
+            </select>
+        </form>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
