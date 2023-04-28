@@ -40,6 +40,10 @@ h1 {
     font-size: 2.5rem;
 }
 
+.fa-hourglass-half {
+    margin-left: 0.5rem;
+}
+
 #form {
     width: 100%;
     display: flex;
@@ -121,8 +125,12 @@ select {
     }
 }
 
-@media only screen and (max-height: 280px) {
+@media only screen and (max-height: 450px) {
     section {
         height: max-content;
+    }
+
+    #form {
+        margin: 2vh 0;
     }
 }

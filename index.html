@@ -12,7 +12,10 @@
 </head>
 <body>
     <section>
-        <h1> Converter </h1>
+        <h1>
+            Converter
+            <i class="fa-solid fa-hourglass-half"></i>
+        </h1>
         
         <form action="#" method="post" id="form">
             <div id="input-field">
@@ -24,16 +27,19 @@
                 <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 
                 <div class="input-box">
-                    <label for="volume" id="label2"> Inch </label>
+                    <label for="volume" id="label2"> Foot </label>
                     <input type="text" name="input-2" id="input2" autocomplete="off">
                 </div>
             </div>
 
             <select name="converter" id="converter">
+                <option value="cm-to-foot"> cm to foot </option>
                 <option value="cm-to-inch"> cm to inch </option>
                 <option value="celsius-to-fahrenheit">
                     &deg;C to &deg;F
                 </option>
+                <option value="km-to-mile"> km to mile </option>
+                <option value="kg-to-pound"> kg to pound </option>
             </select>
         </form>
     </section>
